@@ -318,6 +318,21 @@ a {
         width: 50%;
     }
 }
+@media only screen and (max-width: 392px){
+    .navbar-right ul{
+        display: flex;
+    }
+    .Navbar-bottom .menu ul li {
+        padding: 0 15px;}
+}
+@media only screen and (max-width: 376px){
+    .navbar-right ul li .cart{
+        right: 62px;
+    }
+    .navbar-right ul li .cart.item {
+        right: 31px;
+    }
+}
 @media only screen and (max-width: 321px)
 {
 .navbar-middle {

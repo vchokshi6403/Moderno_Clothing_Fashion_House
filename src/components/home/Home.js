@@ -284,7 +284,7 @@ function Home() {
                                     <div className="col-md-6">
                                     <div className="filterItems">
                                         <img src={women} alt="" />
-                                        <div className="button">
+                                        <div className="button women">
                                             <button className='filter' onClick={() => handleProductShop('women')} >Women</button>
                                         </div>
                                     </div>
@@ -301,15 +301,15 @@ function Home() {
                   <div className="col-md-6">
                                     <div className="filterItems">
                                         <img src={jewellery} alt="" />
-                                        <div className="button">
-                                            <button className='filter' onClick={() => handleProductShop('kids')} >Jewellery</button>
+                                        <div className="button kids">
+                                            <button className='filter' onClick={() => handleProductShop('kids')} >Kids</button>
                                         </div>
                                     </div>
                                     </div>
                                     <div className="col-md-6">
                                     <div className="filterItems">
                                         <img src={accessories} alt="" />
-                                        <div className="button men">
+                                        <div className="button accessories">
                                             <button className='filter' onClick={() => handleProductShop('accessories')} >Accessories</button>
                                         </div>
                                     </div>

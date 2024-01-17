@@ -1,7 +1,7 @@
 /*global google */
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './checkout.css'
 import Navbar from '../navbar/Navbar';
@@ -11,8 +11,6 @@ import logo from '../../assets/logo2.svg'
 function Checkout() {
   const cartItems = useSelector((state) => state.cart.data);
   const navigate = useNavigate();
-  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
-  const [googlePayClient, setGooglePayClient] = useState(null);
   let totalAmount = () => {
     const total = cartItems.reduce(
       (total, item) => total + (item.price * item.quantity),
@@ -167,13 +165,15 @@ function Checkout() {
                         </li>
                         <li>
                           <input type="radio" name="payment" id="cashOnDelivery"
-                            onChange={() => setSelectedPaymentMethod('cashOnDelivery')} />
+                         />
                           <label htmlFor="">Cash on delivery</label>
                         </li>
                       </ul>
                     </div>
                     <div className="checkout">
+                      <Link to="/order-received">
                       <button className="checkoutbtn">Place Order</button>
+                      </Link>
                     </div>
                   </div>
                 </div>

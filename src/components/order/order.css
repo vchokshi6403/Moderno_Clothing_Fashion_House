@@ -1,0 +1,24 @@
+.orderdetails {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.orderdetails .emptyCart{
+    margin-top: 50px;
+    width: 120px;
+    margin-bottom: 0;
+}
+.orderdetails .emptyCart .image img{
+    width: 100%;
+}
+.orderdetails .heading{
+    border: none;
+    margin-bottom: 50px;
+}
+.orderdetails .heading span{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+}

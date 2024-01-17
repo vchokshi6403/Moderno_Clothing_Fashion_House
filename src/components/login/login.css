@@ -1,0 +1,97 @@
+.Login {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.loginCover {
+    margin: 50px;
+    text-align: center;
+}
+
+.loginCover .header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.loginCover .header span {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.loginForm {
+    margin: 40px 325px 0;
+    padding: 0 90px 45px;
+    width: 520px;
+    max-width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.loginCover .loginForm .form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+.form-row label span {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #E3E3E3;
+    height: auto;
+}
+
+.loginBtn button {
+    width: 100%;
+    color: #ffff;
+    background: #070707;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: all 0.3s linear;
+
+}
+
+.loginBtn button:hover {
+    background: #fc5f49;
+}
+
+
+@media only screen and (max-width: 1025px){
+    .loginForm {
+        margin: 40px 174px 0;
+    }
+}
+@media only screen and (max-width: 769px)
+{
+.loginForm {
+    margin: 20px 50px 0;
+}
+
+}
+@media only screen and (max-width: 426px){
+    .loginCover {
+        margin: 10px;
+    }
+    .loginForm{
+        margin: 20px 0px 0px;
+        padding: 0 25px 25px;
+    }
+}

@@ -1,0 +1,58 @@
+.shopCover {
+    font-family: 'Manrope', sans-serif;
+}
+
+.shopItemCover {
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.shopCover .category {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.shopCover .category .categoryClass {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.shopCover .category .categoryClass button {
+    border: 1px solid #e3e3e3;
+    transition: all 0.3s linear;
+
+}
+
+.shopCover .category .categoryClass button img {
+    width: 100%;
+}
+
+.shopCover .category .categoryClass span {
+    text-transform: uppercase;
+    color: #878787;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 6px;
+    transition: all 0.3s linear;
+}
+
+.shopCover .category .categoryClass:hover button {
+    border: 1px solid #070707;
+}
+
+.shopCover .category .categoryClass:hover span {
+    color: #fc5f49;
+}
+
+@media only screen and (max-width:769px) {
+    .shopCover .category .categoryClass {
+        width: 115px;
+    }
+}

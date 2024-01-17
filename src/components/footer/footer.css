@@ -1,0 +1,204 @@
+.footer {
+    background: #070707;
+}
+
+.footer-details {
+    padding: 65px 70px;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.footer-left .title {
+    margin-bottom: 25px;
+}
+
+.footer-left .title span {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.email input {
+    width: 70%;
+    padding: 10px 15px;
+    border-radius: 0;
+    background: #070707;
+    color: #e3e3e3;
+    border: 1px solid #545252;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.subsButton {
+    margin-top: 15px;
+}
+
+.subsButton button {
+    background: #ffffff40;
+    padding: 8px 25px;
+    color: #ffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.subsButton button:hover {
+    color: #070707;
+    background: #ffff;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list ul li {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.list ul li:hover {
+    color: #fc5f49;
+}
+
+.footer-right .first span {
+    color: #646464;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-right .details {
+    margin: 15px 0;
+
+}
+
+.footer-right .details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-right .details ul li {
+    color: #646464;
+    padding-top: 13px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.footer-right .details ul li span {
+    color: #ffff;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+
+.footer-right .details ul li span:hover {
+    color: #fc5f49;
+}
+
+.footer-details .payment {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.footer-details .payment img {
+    width: 75%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.footer-details .payment img:hover {
+    opacity: 1;
+}
+
+.footer-details .copyright {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.footer-details .copyright span {
+    color: #646464;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-details .social {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.footer-details .social ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+
+}
+
+.footer-details .social ul li {
+    padding: 10px 15px;
+    border: 1px solid #2b2b2b;
+    cursor: pointer;
+}
+
+.footer-details .social ul li span {
+    color: #ffff;
+    font-size: 17px;
+    transition: all 0.3s linear;
+
+}
+
+.footer-details .social ul li:hover span {
+    color: #fc5f49;
+}
+
+@media only screen and (max-width:426px) {
+    .footer-details {
+        padding: 40px 35px;
+    }
+
+    .footer-details .social {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-details .payment {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-details .copyright {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-details .list {
+        margin: 10px 0;
+    }
+
+    .footer-details .payment img {
+        width: 100%;
+    }
+    .footer-left .title span{
+        font-size: 12px;
+    }
+    .list ul li{
+        font-size: 12px;
+    }
+}

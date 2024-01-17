@@ -1,0 +1,228 @@
+.itemPage {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+.itemImage img {
+    width: 80%;
+}
+
+.itemDetailsDesc {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-left: 1px solid #e3e3e3;
+
+
+}
+
+.itemDetailsDesc .brandImage {
+    width: 150px;
+
+}
+
+.itemDetailsDesc .brandImage img {
+    width: 100%;
+}
+
+.productDescription {
+    margin-top: 30px;
+}
+
+.productDescription .title {
+    margin-bottom: 20px;
+}
+
+.productDescription .title h2 {
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.productDescription .price {
+    display: flex;
+    align-items: baseline;
+}
+
+.productDescription .price .discount span {
+    border: 1px solid #FC5F49;
+    color: #FC5F49;
+    padding: 3px 7px 1px 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.productDescription .price .discountPrice {
+    margin-left: 10px;
+
+}
+
+.productDescription .price .discountPrice span {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+
+}
+
+.productDescription .price .originalPrice {
+    margin-left: 5px;
+
+}
+
+.productDescription .price .originalPrice span {
+    font-size: 11.5px;
+    color: #878787;
+    text-decoration: line-through;
+    font-weight: 500;
+    text-decoration-thickness: 0.04em;
+}
+
+.productDescription .overview {
+    margin-top: 25px;
+}
+
+.productDescription .overview span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.amazon {
+    margin-top: 30px;
+}
+
+.amazon button {
+    background: #070707;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 9px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.productBtns {
+    margin-top: 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.productBtns .wishlist .wishlistBtn {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.productBtns .wishlist .wishlistBtn .wishlistPath i {
+    margin-left: 4px;
+    margin-top: 5px;
+    color: #838383;
+    font-weight: 400;
+}
+
+.productBtns .wishlist .wishlistBtn .wishlistText span {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #838383;
+}
+
+.productBtns .share .wishlistBtn {
+    margin-left: 50px;
+}
+
+.share .social {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 2px 8px;
+    transform: translate(-50%, calc(100% + 5px));
+    background-color: #ffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    flex-wrap: nowrap;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.share .social .socialList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.share .social .socialList .socialitem {
+    padding: 10px;
+    color: #838383;
+}
+
+.share .social .socialList .socialitem i {
+    transition: all 0.3s linear;
+}
+
+.share .social .socialList .socialitem i:hover {
+    color: #070707;
+}
+
+.share:hover .social {
+    opacity: 1;
+}
+
+.DeatiledDescription {
+    margin-top: 35px;
+}
+
+.DeatiledDescription .accordion-button:focus {
+    border-color: #ffff;
+    box-shadow: none;
+}
+
+.DeatiledDescription .accordion-button:not(.collapsed) {
+    color: #070707;
+    background-color: #ffff;
+}
+
+.DeatiledDescription .accordion-button::after {
+    background-image: url(../../assets/plus.png);
+    background-size: 12px;
+}
+
+.DeatiledDescription .accordion-button:not(.collapsed)::after {
+    background-image: url(../../assets/close.png);
+    background-size: 10px;
+
+}
+
+.DeatiledDescription .accordion-button {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.DeatiledDescription .accordion-body p {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+.outofstock{
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+.outofstock span{
+    text-transform: uppercase;
+    color: #da432e;
+    font-size: 13px;
+    font-weight: 500;
+}

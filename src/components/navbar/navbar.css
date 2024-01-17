@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    width: 100%;
+    z-index: 999;
+}
+
+.Main.sticky{
+    background: #ffffff;
+    border-bottom: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.07);
+    -webkit-animation: sticky 1s;
+    animation: sticky 1s;
+
+}
+
+.Main.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes sticky{
+    0% {
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Add any other styles as needed */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Manrope', sans-serif;
+    padding: 15px 0px;
+    border-bottom: 2px solid #0e0e0e;
+
+}
+
+.navbar-left {
+    width: 33.33%;
+    padding-left: 35px;
+}
+
+.navbar-left span {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.navbar-middle {
+    width: 33.33%;
+    text-align: center;
+}
+
+.navbar-right {
+    width: 33.33%;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-right ul li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+.navbar-right ul li button {
+    border: none;
+    background: #ffff;
+}
+
+.navbar-right ul li button i {
+    font-size: 17px;
+}
+
+.navbar-right ul li .cart {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    line-height: 17px;
+    top: 9px;
+    right: 71px;
+    background: #fc5f49;
+    color: #ffff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.navbar-right ul li .cart.item {
+    right: 37px;
+}
+
+.Navbar-bottom {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.Navbar-bottom .menu {
+    padding: 10px 0;
+}
+
+.Navbar-bottom .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.Navbar-bottom .menu ul li {
+    padding: 0 17px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+}
+
+
+.cartShow {
+    position: absolute;
+    right: 33px;
+    width: 324px;
+    z-index: 1100;
+    white-space: normal;
+    opacity: 0 !important;
+    visibility: hidden;
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #070707;
+    background-color: #ffff;
+    border: solid 1px;
+    transition: none;
+    padding: 25px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e3e3e3;
+}
+
+.cartList .cartShow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 11px;
+    height: 11px;
+}
+
+.cartList .cartShow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #ffff;
+    transform-origin: center;
+    transform: rotate(45deg);
+    border-top: solid 1px #e3e3e3;
+    border-left: solid 1px #e3e3e3;
+}
+
+.cartList:hover .cartShow {
+    opacity: 1 !important;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-product .product-list {
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.product-list .product-item {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+
+}
+
+.product-item .product-wrap {
+    position: relative;
+    display: flex;
+    column-gap: 15px;
+}
+
+.product-item .product-wrap .itemimg {
+    width: 65px;
+    flex: 0 0 auto;
+}
+
+.product-item .product-wrap .itemimg img {
+    width: 65px;
+    height: 65px;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+}
+
+.product-item .product-wrap .itemDesc {
+    flex: 1 1 auto;
+    min-height: 65px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-item .product-wrap .itemDesc .itemtitle {
+    text-align: justify;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.product-item .product-wrap .itemDesc .itemprice {
+    text-align: left;
+    font-size: 13px;
+    color: #878787;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.subTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subTotal .totalprice {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.subTotal .amount {
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+/* Add this to your existing navbar.css file */
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-left{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .navbar-links.show {
+        display: block;
+    }
+
+    .navbar-links li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .navbar-middle {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 321px)
+{
+.navbar-middle {
+    width: 60%;
+}
+.Navbar-bottom .menu ul li{
+    font-size: 10px;
+}
+}

@@ -1,0 +1,54 @@
+.checkout{
+    font-family: 'Manrope',sans-serif;
+}
+.order{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.order span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+.order ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.order ul li {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.order ul li .orderItem {
+    font-weight: 400;
+    text-transform: none;
+}
+.paymentMethod{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.paymentMethod span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+.paymentMethod ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.paymentMethod ul li{
+    padding-top: 15px;
+}
+.paymentMethod ul li input {
+    width: 6%;
+}
+.paymentMethod ul li label{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
